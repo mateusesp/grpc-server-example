@@ -16,3 +16,8 @@ After this the files in proto will be generated automatic because we set aconfig
 ---
 ### Testing requests
 To test the login request I use and recommend the "BloomRPC", you can download here: [BloomRPC](https://github.com/bloomrpc/bloomrpc#readme)
+
+
+### gRPC Diagram Representation:
+
+![img.png](img.png)
