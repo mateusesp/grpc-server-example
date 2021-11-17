@@ -11,7 +11,9 @@ import java.util.logging.Logger;
 
 @SpringBootApplication
 public class GrpcServerSpringApplication {
+
     private static final Logger logger = Logger.getLogger(GrpcServerSpringApplication.class.getName());
+
     public static void main(String[] args) throws IOException, InterruptedException {
 
         SpringApplication.run(GrpcServerSpringApplication.class, args);
