@@ -1,0 +1,31 @@
+syntax = "proto3";
+package proto;
+
+option java_multiple_files = true; // buildar as classes em arquivos separados
+option java_package = "generated"; // nome onde fica as classes geradas
+option java_outer_classname = "UserProtos"; // nome da classe do wrapper (opcional)
+
+service user {
+  rpc login(LoginRequest) returns (APIResponse);
+
+  rpc logout(Empty) returns (APIResponse);
+
+}
+
+message LoginRequest {
+
+  string username = 1;
+  string password = 2;
+
+}
+
+message APIResponse {
+
+  string responseMessage = 1;
+  int32 responseCode = 2;
+
+}
+
+message Empty {
+
+}
